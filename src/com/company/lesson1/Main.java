@@ -1,11 +1,15 @@
 package com.company.lesson1;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println("My name is Albert");
+        Scanner in = new Scanner(System.in);
+        String name = in.nextLine();
+        Person Optimus = new Person();
+        Optimus.height = 360;
+        System.out.println(Optimus.height);
 
-        String name = "Albert";
-        System.out.println("\nHello " + name);
+        Optimus.sayHello(name);
     }
 }
+
